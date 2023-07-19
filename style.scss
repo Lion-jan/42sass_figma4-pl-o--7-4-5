@@ -1,0 +1,265 @@
+@mixin card ($padding,$border-height,$border-type,$border-color,$bg-color,$radius){
+    padding: $padding;
+    border: $border-height $border-type $border-color;
+    background-color: $bg-color;
+    border-radius: $radius;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+@mixin card-in ($radius-in,$deg ,$color1 ,$percent1, $color2,$percent2 ){
+       width: 167px;
+       height: 184px;
+        border: none;
+        border-radius: $radius-in;
+        background: linear-gradient($deg, $color1 $percent1, $color2 $percent2);
+
+}
+
+@mixin ellips ($color1){
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    background-color: $color1;
+
+}
+
+
+
+.cards{
+    display: grid;
+    grid-template-columns: repeat(4 ,219px);
+    grid-template-rows: 340 px 340px;
+    padding: 100px;
+    gap: 60px;
+
+    .card1{
+        @include card(26px,3px,solid,#c2c2c2,rgb(26, 24, 59),12px);
+
+        .card-in{
+            
+            @include card-in(12px,44deg,#00bd56,0%,#f9fd50,100%);
+
+        }
+
+        .span   {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            color: #4f96be;
+
+    
+
+            .ellips1{
+                @include ellips(#00bd56);
+            }
+
+            .ellips2{
+                @include ellips(#f9fd50);
+            }
+        }
+
+    }
+
+
+    .card2{
+        @include card(26px,3px,solid,#c2c2c2,rgb(26, 24, 59),12px);
+
+        .card-in{
+            
+            @include card-in(12px,44deg,#26baae,10%,#9f8fa9,100%);
+
+        }
+
+        .span   {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            color: #4f96be;
+
+    
+
+            .ellips1{
+                @include ellips(#26baae);
+            }
+
+            .ellips2{
+                @include ellips(rgb(255, 239, 239));
+            }
+        }
+
+    }
+
+    .card3{
+        @include card(26px,3px,solid,#c2c2c2,rgb(26, 24, 59),12px);
+
+        .card-in{
+            
+            @include card-in(12px,44deg,#8f71ff , 0%, #8bffff,100%);
+
+        }
+
+        .span   {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            color: #4f96be;
+
+    
+
+            .ellips1{
+                @include ellips( #8f71ff);
+            }
+
+            .ellips2{
+                @include ellips( #8bffff);
+            }
+        }
+
+    }
+
+    .card4{
+        @include card(26px,3px,solid,#c2c2c2,rgb(26, 24, 59),12px);
+
+        .card-in{
+            
+            @include card-in(12px,10deg,red,10%,white,100%);
+
+        }
+
+        .span   {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            color: #4f96be;
+
+    
+
+            .ellips1{
+                @include ellips(#c7004c);
+            }
+
+            .ellips2{
+                @include ellips( #ffaaaa);
+            }
+        }
+
+    }
+
+    .card5{
+        @include card(26px,3px,solid,#c2c2c2,rgb(26, 24, 59),12px);
+
+        .card-in{
+            
+            @include card-in(12px,44deg,#226b80,10%,#35b0ab,100%);
+
+        }
+
+        .span   {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            color: #4f96be;
+
+    
+
+            .ellips1{
+                @include ellips(#226b80);
+            }
+
+            .ellips2{
+                @include ellips(#35b0ab);
+            }
+        }
+
+    }
+
+    .card6{
+        @include card(26px,3px,solid,#c2c2c2,rgb(26, 24, 59),12px);
+
+        .card-in{
+            
+            @include card-in(12px,44deg, #3d6cb9,10%,#00fff0,100%);
+
+        }
+
+        .span   {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            color: #4f96be;
+
+    
+
+            .ellips1{
+                @include ellips( #3d6cb9);
+            }
+
+            .ellips2{
+                @include ellips(    #00fff0);
+            }
+        }
+
+    }
+
+    .card7{
+        @include card(26px,3px,solid,#c2c2c2,rgb(26, 24, 59),12px);
+
+        .card-in{
+            
+            @include card-in(12px,44deg, #4d3664, 0%,white,100%);
+
+        }
+
+        .span   {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            color: #4f96be;
+
+    
+
+            .ellips1{
+                @include ellips( #4d3664);
+            }
+
+            .ellips2{
+                @include ellips(#bab5f6);
+            }
+        }
+
+    }
+
+    .card8{
+        @include card(26px,3px,solid,#c2c2c2,rgb(26, 24, 59),12px);
+
+        .card-in{
+            
+            @include card-in(12px,44deg,#fa4659,0%, #e9007f,100%);
+
+        }
+
+        .span   {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            color: #4f96be;
+
+    
+
+            .ellips1{
+                @include ellips(#fa4659);
+            }
+
+            .ellips2{
+                @include ellips( #e9007f);
+            }
+        }
+
+    }
+
+
+    
+    
+}
